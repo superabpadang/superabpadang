@@ -14,7 +14,6 @@ export default function OverflowMenu() {
         <div className="menu-panel">
           <a href="/">Home</a>
           <a href="/#kontak">Hubungi Kami</a>
-          <a href="/login">Login</a>
         </div>
       )}
     </div>
