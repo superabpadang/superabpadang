@@ -4,9 +4,31 @@ import { useState } from 'react';
 
 export default function Home() {
   const [activeProduct, setActiveProduct] = useState<'tahu' | 'cincau'>('tahu');
+  const localBusinessJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'LocalBusiness',
+    name: 'Super AB Padang',
+    description: 'Produsen tahu dan cincau di Padang.',
+    telephone: '+62 812 8937 3479',
+    email: 'superabpadang@gmail.com',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: 'Jln. Kampung Jambak No.63, RT1/RW9, Kelurahan Koto Lalang',
+      addressLocality: 'Padang',
+      addressRegion: 'Sumatera Barat',
+      addressCountry: 'ID',
+    },
+    openingHours: 'Mo-Su 22:00-06:00',
+    url: 'https://superabpadang.superabpadang.workers.dev',
+    sameAs: ['https://maps.app.goo.gl/WsxnpBwPbaEGZvvdA'],
+  };
 
   return (
     <main className="shell landing modern-home">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
+      />
       <section className="showcase">
         <aside className="showcase-left">
           <p className="showcase-label">Super AB Padang</p>
@@ -100,7 +122,8 @@ export default function Home() {
             target="_blank"
             rel="noreferrer"
           >
-            <span aria-hidden="true">WA</span>`n            Chat via WhatsApp
+            <span aria-hidden="true">WA</span>
+            Chat via WhatsApp
           </a>
           <p><strong>Alamat:</strong> Jln. Kampung Jambak No.63, RT1/RW9, Kelurahan Koto Lalang, Kecamatan Lubuk Kilangan, Kota Padang, Sumatera Barat, Indonesia</p>
           <p>

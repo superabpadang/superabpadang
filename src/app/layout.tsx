@@ -3,7 +3,7 @@ import OverflowMenu from '../components/OverflowMenu';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://superabpadang.com'),
+  metadataBase: new URL('https://superabpadang.superabpadang.workers.dev'),
   title: 'Super AB Padang | Tahu & Cincau',
   description: 'Super AB Padang - produsen tahu sejak 1998 dan cincau sejak 2022. Pemesanan, lokasi pabrik, dan kontak resmi.',
   keywords: ['tahu super ab', 'cincau ab', 'super ab padang', 'tahu padang', 'cincau padang'],
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Super AB Padang | Tahu & Cincau',
     description: 'Produsen tahu dan cincau di Padang. Lihat cara pemesanan, lokasi pabrik, dan kontak resmi.',
-    url: 'https://superabpadang.com',
+    url: 'https://superabpadang.superabpadang.workers.dev',
     siteName: 'Super AB Padang',
     locale: 'id_ID',
     type: 'website',

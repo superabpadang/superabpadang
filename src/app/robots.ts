@@ -6,8 +6,7 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://superabpadang.com/sitemap.xml',
-    host: 'https://superabpadang.com',
+    sitemap: 'https://superabpadang.superabpadang.workers.dev/sitemap.xml',
+    host: 'https://superabpadang.superabpadang.workers.dev',
   };
 }
-
